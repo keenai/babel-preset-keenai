@@ -31,6 +31,7 @@ const config = {
 
 if (environment === 'development' || environment === 'test') {
   config.plugins.push([
+    'react-hot-loader/babel',
     'transform-react-jsx-source',
     'transform-react-jsx-self',
   ]);
