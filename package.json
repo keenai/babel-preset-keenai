@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-keenai",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A babel preset for Keenai applications",
   "authors": [
     "Gabe Hayes <gabe@ric.ricoh.com>",
