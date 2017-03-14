@@ -4,6 +4,10 @@ const environment = process.env.NODE_ENV || 'development';
 
 const config = {
   plugins: [
+    ['styled-components', {
+      minify: false,
+      ssr: true,
+    }],
     'syntax-trailing-function-commas',
     'transform-class-properties',
     ['transform-object-rest-spread', {
