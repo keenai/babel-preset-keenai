@@ -1,5 +1,5 @@
 {
-  "name": "@keenai/babel-preset-keenai",
+  "name": "@keenai/babel-preset",
   "version": "0.1.3",
   "description": "A babel preset for Keenai applications",
   "authors": [
@@ -7,7 +7,7 @@
     "Daniel Bohannon <daniel@ric.ricoh.com>"
   ],
   "main": "index.js",
-  "repository": "git@github.com:keenai/babel-preset-keenai.git",
+  "repository": "git@github.com:keenai/babel-preset.git",
   "dependencies": {
     "babel-plugin-styled-components": "^1.0.1",
     "babel-plugin-syntax-trailing-function-commas": "^6.22.0",
