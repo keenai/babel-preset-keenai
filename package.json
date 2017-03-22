@@ -7,7 +7,6 @@
     "Daniel Bohannon <daniel@ric.ricoh.com>"
   ],
   "main": "index.js",
-  "private": "true",
   "repository": "git@github.com:keenai/babel-preset-keenai.git",
   "dependencies": {
     "babel-plugin-styled-components": "^1.0.1",
