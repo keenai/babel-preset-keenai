@@ -1,5 +1,5 @@
 {
-  "name": "@keenai/babel-preset",
+  "name": "@keenai/babel-preset-keenai",
   "version": "0.1.4",
   "description": "A babel preset for Keenai applications",
   "authors": [
@@ -8,12 +8,12 @@
   ],
   "main": "index.js",
   "bugs": {
-    "url": "https://github.com/keenai/babel-preset/issues"
+    "url": "https://github.com/keenai/babel-preset-keenai/issues"
   },
-  "homepage": "https://github.com/keenai/babel-preset#readme",
+  "homepage": "https://github.com/keenai/babel-preset-keenai#readme",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/keenai/babel-preset.git"
+    "url": "git+ssh://git@github.com/keenai/babel-preset-keenai.git"
   },
   "license": "ISC",
   "dependencies": {
