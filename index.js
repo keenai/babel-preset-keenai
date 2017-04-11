@@ -1,3 +1,4 @@
+const merge = require('lodash/merge');
 const path = require('path');
 
 const environment = process.env.NODE_ENV || 'development';
@@ -38,4 +39,6 @@ if (environment === 'development' || environment === 'test') {
   ]);
 }
 
-module.exports = config;
+module.exports = function(context, options) {
+  return merge(config, options);
+}
