@@ -53,7 +53,6 @@ module.exports = function(context, options = {}) {
 
   if (process.env.NODE_ENV === 'test') {
     config.plugins.push([
-      'dynamic-import-node',
       'transform-es2015-modules-commonjs',
       'transform-react-jsx-self',
       'transform-react-jsx-source',
