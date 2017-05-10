@@ -43,6 +43,7 @@ module.exports = function(context, options = {}) {
 
   if (process.env.NODE_ENV === 'development') {
     config.plugins.push(
+      'flow-react-proptypes',
       'react-hot-loader/babel',
       'transform-react-jsx-self',
       'transform-react-jsx-source'
