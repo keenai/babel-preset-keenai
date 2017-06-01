@@ -1,22 +1,34 @@
 const path = require('path');
 const environment = process.env.NODE_ENV || 'development';
 
-module.exports = function(context, options = {}) {
-  const intlMessagesDir = (
-    options.intlMessagesDir || './build/messages/'
-  );
+const defaults = {
+  debug: false,
+  loose: false,
+  intlMessagesDir: './build/messages/',
+  modules: 'commonjs',
+  targets: {},
+  useBuiltIns: true,
+};
 
-  const modules = (
-    options.modules !== undefined ? options.modules : 'commonjs'
-  );
+module.exports = function(context, opts = {}) {
+  const options = Object.assign({}, defaults, opts);
 
   const config = {
     plugins: [
       ['react-intl', {
-        messagesDir: intlMessagesDir,
+        messagesDir: options.intlMessagesDir,
         enforceDescriptions: true,
       }],
       'styled-components',
+      'syntax-dynamic-import',
+      'transform-class-properties',
+      'transform-export-extensions',
+      ['transform-object-rest-spread', {
+        useBuiltIns: options.useBuiltIns,
+      }],
+      ['transform-react-jsx', {
+        useBuiltIns: options.useBuiltIns,
+      }],
       ['transform-runtime', {
         helpers: false,
         polyfill: false,
@@ -26,18 +38,8 @@ module.exports = function(context, options = {}) {
     ],
 
     presets: [
-      ['env', {
-        modules,
-        targets: {
-          browsers: [
-            '> 5%',
-            'last 2 versions',
-          ],
-          node: true,
-        },
-      }],
+      ['env', options],
       'react',
-      'stage-0',
     ],
   };
 
@@ -52,8 +54,6 @@ module.exports = function(context, options = {}) {
 
   if (process.env.NODE_ENV === 'test') {
     config.plugins.push(
-      'syntax-dynamic-import',
-      'transform-es2015-modules-commonjs',
       'transform-react-jsx-self',
       'transform-react-jsx-source'
     );
