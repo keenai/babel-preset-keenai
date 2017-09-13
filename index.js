@@ -42,7 +42,7 @@ module.exports = function(context, opts = {}) {
       'flow-react-proptypes',
       'react-hot-loader/babel',
       'transform-react-jsx-self',
-      'transform-react-jsx-source'
+      'transform-react-jsx-source',
       ['transform-runtime', {
         helpers: false,
         polyfill: false,
@@ -66,6 +66,8 @@ module.exports = function(context, opts = {}) {
       'transform-react-constant-elements'
     );
   }
+
+  console.log(config.plugins);
 
   return config;
 }
