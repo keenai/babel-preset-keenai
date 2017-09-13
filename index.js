@@ -67,7 +67,5 @@ module.exports = function(context, opts = {}) {
     );
   }
 
-  console.log(config.plugins);
-
   return config;
 }
