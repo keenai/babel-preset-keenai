@@ -29,12 +29,6 @@ module.exports = function(context, opts = {}) {
       ['transform-react-jsx', {
         useBuiltIns: options.useBuiltIns,
       }],
-      ['transform-runtime', {
-        helpers: false,
-        polyfill: false,
-        regenerator: true,
-        moduleName: path.dirname(require.resolve('babel-runtime/package')),
-      }],
     ],
 
     presets: [
@@ -49,6 +43,12 @@ module.exports = function(context, opts = {}) {
       'react-hot-loader/babel',
       'transform-react-jsx-self',
       'transform-react-jsx-source'
+      ['transform-runtime', {
+        helpers: false,
+        polyfill: false,
+        regenerator: true,
+        moduleName: path.dirname(require.resolve('babel-runtime/package')),
+      }],
     );
   }
 
