@@ -1,6 +1,6 @@
 {
   "name": "@keenai/babel-preset-keenai",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "A babel preset for Keenai applications",
   "authors": [
     "Gabe Hayes <gabe@ric.ricoh.com>",
@@ -20,8 +20,8 @@
     "cz-conventional-changelog": "^2.0.0"
   },
   "peerDependencies": {
-    "babel-runtime": "^6.26.0",
-    "react-hot-loader": "^3.0.0-beta.7"
+    "babel-runtime": ">=6.26.0",
+    "react-hot-loader": ">=3.0.0-beta.7"
   },
   "dependencies": {
     "babel-plugin-flow-react-proptypes": "^5.1.2",
