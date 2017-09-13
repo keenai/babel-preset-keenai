@@ -37,7 +37,7 @@ module.exports = function(context, opts = {}) {
     ],
   };
 
-  if (process.env.NODE_ENV === 'development') {
+  if (environment === 'development') {
     config.plugins.push(
       'flow-react-proptypes',
       'react-hot-loader/babel',
@@ -52,14 +52,14 @@ module.exports = function(context, opts = {}) {
     );
   }
 
-  if (process.env.NODE_ENV === 'test') {
+  if (environment === 'test') {
     config.plugins.push(
       'transform-react-jsx-self',
       'transform-react-jsx-source'
     );
   }
 
-  if (process.env.NODE_ENV === 'production') {
+  if (environment === 'production') {
     config.plugins.push(
       'transform-react-remove-prop-types',
       'transform-react-inline-elements',
