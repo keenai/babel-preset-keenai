@@ -1,6 +1,6 @@
 {
   "name": "@keenai/babel-preset-keenai",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A babel preset for Keenai applications",
   "authors": [
     "Gabe Hayes <gabe@ric.ricoh.com>",
@@ -20,7 +20,7 @@
     "cz-conventional-changelog": "^2.0.0"
   },
   "peerDependencies": {
-    "babel-runtime": "^7.0.0-beta.0",
+    "babel-runtime": "^6.26.0",
     "react-hot-loader": "^3.0.0-beta.7"
   },
   "dependencies": {
@@ -30,13 +30,11 @@
     "babel-plugin-syntax-dynamic-import": "^6.18.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-export-extensions": "^6.22.0",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-react-constant-elements": "^6.23.0",
     "babel-plugin-transform-react-inline-elements": "^6.22.0",
-    "babel-plugin-transform-react-jsx-self": "^6.22.0",
-    "babel-plugin-transform-react-jsx-source": "^6.22.0",
-    "babel-plugin-transform-react-remove-prop-types": "^0.4.6",
-    "babel-plugin-transform-runtime": "^7.0.0-beta.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.8",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "lodash": "^4.17.4",
