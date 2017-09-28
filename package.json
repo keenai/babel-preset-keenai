@@ -38,8 +38,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-runtime": "^6.26.0",
-    "lodash": "^4.17.4",
-    "react-hot-loader": ">=3.0.0-beta.7"
+    "lodash": "^4.17.4"
   },
   "config": {
     "commitizen": {
